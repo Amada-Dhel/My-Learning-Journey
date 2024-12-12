@@ -1,0 +1,288 @@
+/* * _{
+    top: 0;
+    left: 0;
+} */
+
+body {
+    font-family: 'Gilroy-regular', sans-serif;
+    font-weight: 400;
+}
+
+.advert {
+    background-color: #0072ec;
+}
+
+.advert-container {
+    list-style-type: none;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 20%;
+}
+
+.advert-1 {
+   position: relative;
+   left: 10px;
+   display: inline;
+}
+.advert a {
+    color: #f6f6f6;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-align: none solid rgb(255, 255, 255);
+    text-decoration: none solid rgb(255, 255, 255);
+}
+
+.advert li {
+    float: left;
+    padding: 10px;
+}
+
+.navbar {
+    padding: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-left: 10px;
+    margin-top:10px;
+    width: 90%;
+    gap: 20px;
+}
+
+.navbar ul {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 1.0rem;
+    list-style: none;
+}
+
+.navbar li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-2 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vh !important;
+    gap: 20px;
+}
+
+.dreamHost-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+    margin-left: -5vh;
+    gap: 20px;
+}
+
+
+.hero {
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 10px solid rgb(255, 253, 253);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: -20px;
+    
+}
+
+.hero-container {
+    display: inline-flex;
+}
+
+.hero h2 {
+    color: #0072ec;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero h3 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+    vertical-align: baseline;
+}
+
+.hero p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.hero-ab {
+    position: relative;
+    top: -8vh;
+    left: 30px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 90px;
+}
+
+.search-bar input {
+    width: 30%;
+    height: 60px;
+    border: 1px solid #dad7d7a4;
+    border-radius: 2px;
+    box-shadow: whitesmoke;
+}
+
+.search-bar button {
+    width: 60px;
+    height: 60px;
+    background-color: #0072ec;
+    border: 1px solid #dad7d7a4;
+    border-radius: 5px;
+}
+
+.services {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.services h2 {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr ;
+}
+
+.wordpress-price-flex {
+    background-color: #f6f6f6;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.wordpress-price-flex:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.webhost-price-flex {
+    background-color: #f6f6f6;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.webhost-price-flex:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.domain-price-flex {
+    background-color: #f6f6f6;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.domain-price-flex:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.free-price-flex {
+    background-color: #f6f6f6;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.free-price-flex:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    .advert-container {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        gap: 10%; /* Reduce gap between items */
+    }
+
+    .advert-1 {
+        left: 0; /* Reset left positioning */
+    }
+
+    .nav-2 {
+        flex-direction: column; /* Stack navigation items vertically */
+        margin-left: 0; /* Reset margin */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        gap: 0.5rem; /* Reduce gap between navbar items */
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    .advert-container {
+        grid-template-columns: 1fr 1fr; /* Two columns layout */
+        gap: 15%; /* Adjust gap */
+    }
+
+    .nav-2 {
+        margin-left: 50vh; /* Adjust margin for tablets */
+    }
+}
+
+/* Desktops */
+@media (min-width: 901px) {
+    .advert-container {
+        grid-template-columns: 0.8fr 1fr; /* Original layout for larger screens */
+        gap: 20%; /* Original gap */
+    }
+
+    .nav-2 {
+        margin-left: 100vh; /* Original margin for larger screens */
+    }
+}
